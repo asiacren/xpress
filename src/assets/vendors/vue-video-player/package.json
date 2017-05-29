@@ -1,0 +1,38 @@
+{
+  "name": "vue-video-player",
+  "version": "2.4.3",
+  "description": "Video Player component for Vue.js(1.x ~ 2.x)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surmon-china/vue-video-player.git"
+  },
+  "keywords": [
+    "vue-video-player",
+    "vue.js video player",
+    "vue.js video",
+    "vue video.js",
+    "vue.js player"
+  ],
+  "author": {
+    "name": "Surmon",
+    "email": "surmon@foxmail.com",
+    "url": "http://surmon.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surmon-china/vue-video-player/issues"
+  },
+  "homepage": "https://github.com/surmon-china/vue-video-player#readme",
+  "dependencies": {
+    "video.js": "^5.11.7",
+    "videojs-youtube": "^2.1.1",
+    "videojs-contrib-hls": "^3.6.0",
+    "videojs-resolution-switcher": "^0.4.2"
+  },
+  "_from": "vue-video-player@2.4.3",
+  "_resolved": "http://registry.npm.taobao.org/vue-video-player/download/vue-video-player-2.4.3.tgz"
+}

@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "myfont";
+	src: url('myfont.eot');
+	src: url('myfont.eot?#iefix') format('eot'),
+		url('myfont.woff') format('woff'),
+		url('myfont.ttf') format('truetype'),
+}
+
+.icon-base-pseudo {
+	font-family: "myfont";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@home: "\E001";
+	@icon_file: "\E002";
+	@icon_img: "\E003";
+	@icon_links: "\E004";
+	@icon_live: "\E005";
+	@icon_share: "\E006";
+	@icon_video: "\E007";
+	@menu: "\E008";
+	@preview: "\E009";
+	@star: "\E00A";
+	@top: "\E00B";
+	@zoom: "\E00C";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-home (){
+	.icon(home);
+}
+.icon-icon_file (){
+	.icon(icon_file);
+}
+.icon-icon_img (){
+	.icon(icon_img);
+}
+.icon-icon_links (){
+	.icon(icon_links);
+}
+.icon-icon_live (){
+	.icon(icon_live);
+}
+.icon-icon_share (){
+	.icon(icon_share);
+}
+.icon-icon_video (){
+	.icon(icon_video);
+}
+.icon-menu (){
+	.icon(menu);
+}
+.icon-preview (){
+	.icon(preview);
+}
+.icon-star (){
+	.icon(star);
+}
+.icon-top (){
+	.icon(top);
+}
+.icon-zoom (){
+	.icon(zoom);
+}
